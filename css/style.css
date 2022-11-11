@@ -3,3 +3,27 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+}
+
+.item-container{
+  max-width: 600px;
+  height: 300px;
+}
+
+.item{
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.item img{
+  max-width: 100%;
+}
