@@ -1,6 +1,14 @@
+// IMG ARRAY
+const image = [
+  "01.webp","02.webp","03.webp","04.webp","05.webp", 
+]
+
+// VARIABILI GENERALI
 const items = document.getElementsByClassName("item");
 
 let activeItems = 0;
+
+
 
 // NAVIGAZIONE
 const next = document.querySelector(".next");
@@ -23,6 +31,5 @@ function() {
     // ALL'ULTIMA IMG DEL CAROUSEL RIMUOVERE FRECCIA
     next.classList.add("hidden");
   }
-
 }
 );
