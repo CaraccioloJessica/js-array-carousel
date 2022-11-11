@@ -1,17 +1,26 @@
 // IMG ARRAY
 const image = [
-  "01.webp","02.webp","03.webp","04.webp","05.webp", 
+  "img/01.webp",
+  "img/02.webp",
+  "img/03.webp",
+  "img/04.webp",
+  "img/05.webp", 
 ]
+
+let activeItems = 0;
 
 // VARIABILI GENERALI
 const items = document.getElementsByClassName("item");
 
-let activeItems = 0;
-
-
-
 // NAVIGAZIONE
 const next = document.querySelector(".next");
+
+// LOOP
+for(let i = 0; i < image.length; i++) {
+  const img = document.createElement("img");
+  img.src = image[i];
+  items.innerHTML.append(img);
+}
 
 next.addEventListener("click",
 function() {
