@@ -6,7 +6,7 @@ const image = [
   "img/04.webp",
   "img/05.webp", 
 ]
-
+// console.log(image)
 let activeItems = 0;
 
 // VARIABILI GENERALI
@@ -17,9 +17,7 @@ const next = document.querySelector(".next");
 
 // LOOP
 for(let i = 0; i < image.length; i++) {
-  const img = document.createElement("img");
-  img.src = image[i];
-  items.innerHTML.append(img);
+  
 }
 
 next.addEventListener("click",
