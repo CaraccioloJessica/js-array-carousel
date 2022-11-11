@@ -16,19 +16,19 @@
 .slider{
   display: flex;
   justify-content: center;
-  width: 70%;
-  height: 50vh;
+  width: 900px;
+  height: 400px;
 }
 
 /*********** CONTENITORE IMMMAGINI ***********/
 .item-container{
-  width: 80%;
-  height: 100%;
+  width: 900px;
+  height: 400px;
   position: relative;
 }
 
 .item {
-  height: 50vh;
+  height: 100%;
   display: none;
 }
 
@@ -42,6 +42,7 @@
   object-fit: cover;
 }
 
+/* BOTTONE AVANTI */
 .next{
   position: absolute;
   top: 50%;
