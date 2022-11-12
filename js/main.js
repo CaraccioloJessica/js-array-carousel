@@ -14,7 +14,8 @@ let items = document. querySelector(".item");
 
 // NAVIGAZIONE
 const next = document.querySelector(".next");
+items.classList.add("active");
 
 for (let i = 0; i < images.length; i++){
-  items.innerHTML+=`<img src="${images[i]}" alt="">`
+  items.innerHTML+=`<img src="${images[i]}">`
  }
