@@ -7,12 +7,17 @@ let images = [
   "img/05.webp", 
 ]
 
-let img = images.length;
-let index = 0;
+let activeItems = 0;
 
 // VARIABILI GENERALI
-const items = document.getElementsByClassName("item");
-items.appendChild(img);
+let items = document. querySelector(".item");
+
+let creaImg = document.createElement("img");
+
+creaImg.src = images[0];
+
+items.appendChild(creaImg);
+
 // NAVIGAZIONE
 const next = document.querySelector(".next");
 
