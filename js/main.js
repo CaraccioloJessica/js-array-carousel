@@ -12,12 +12,9 @@ let activeItems = 0;
 // VARIABILI GENERALI
 let items = document. querySelector(".item");
 
-let creaImg = document.createElement("img");
-
-creaImg.src = images[0];
-
-items.appendChild(creaImg);
-
 // NAVIGAZIONE
 const next = document.querySelector(".next");
 
+for (let i = 0; i < images.length; i++){
+  items.innerHTML+=`<img src="${images[i]}" alt="">`
+ }
