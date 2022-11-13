@@ -28,19 +28,6 @@ imgVisualizzata.classList.add("active");
 const up = document.querySelector(".up");
 const down = document.querySelector(".down");
 
-// BOTTONE GIU
-down.addEventListener("click",
-function (){
-  index--;
-  if (index < 0) {
-    index = images.length - 1;
-  }
-  imgVisualizzata.classList.remove("active");
-  imgVisualizzata = document.getElementById("slide" + index);
-  imgVisualizzata.classList.add("active");
-  }
- );
-  
 //  BOTTONE SU
 up.addEventListener("click",
  function () {
@@ -52,4 +39,18 @@ up.addEventListener("click",
   imgVisualizzata = document.getElementById("slide" + index);
   imgVisualizzata.classList.add("active");  
   }
- );
+);
+
+// BOTTONE GIU
+down.addEventListener("click",
+function (){
+  index--;
+  if (index < 0) {
+    index = images.length - 1;
+  }
+  imgVisualizzata.classList.remove("active");
+  imgVisualizzata = document.getElementById("slide" + index);
+  imgVisualizzata.classList.add("active");
+  }
+);
+  
