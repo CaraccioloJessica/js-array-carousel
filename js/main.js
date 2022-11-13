@@ -28,26 +28,36 @@ imgVisualizzata.classList.add("active");
 const up = document.querySelector(".up");
 const down = document.querySelector(".down");
 
-//  BOTTONE SU
+//  BOTTONE SU CLICCATO
 up.addEventListener("click",
  function () {
+  // AVANZA DI 1 NELL'INDICE
   index++;
-  if (index > 4) {
-    index = images.length + 1;
+  // SE L'INDICE PASSA L'ULTIMA FOTO DELL'ARRAY
+  if (index > images.length - 1) {
+    // INDICE TORNA A 0
+    index = 0;
   }
+
+  // VISUALIZZA FOTO NELL ITEM
   imgVisualizzata.classList.remove("active");
   imgVisualizzata = document.getElementById("slide" + index);
   imgVisualizzata.classList.add("active");  
   }
 );
 
-// BOTTONE GIU
+// BOTTONE GIU CLICCATO
 down.addEventListener("click",
 function (){
+  // DIMINUISCE DI 1 NELL'INDICE
   index--;
+  // SE INDICE ATTUALLE VA SOTTO LO 0
   if (index < 0) {
+    // IMPOSTA INDICE NELL'ULTIMA FOTO DELL'ARRAY
     index = images.length - 1;
   }
+
+  // VISUALIZZA FOTO NELL ITEM
   imgVisualizzata.classList.remove("active");
   imgVisualizzata = document.getElementById("slide" + index);
   imgVisualizzata.classList.add("active");
