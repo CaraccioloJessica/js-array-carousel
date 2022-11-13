@@ -13,6 +13,7 @@ let index = 0;
 // VARIABILE CONTAINER
 let itemContenitore = document.querySelector(".item-container");
 
+// LOOP CHE CREA DIV CONTENENTE TAG IMG IN BASE ALLA LUNGHEZZA DELL'ARRAY
 for (let i = 0; i < images.length; i++){
   itemContenitore.innerHTML+=
   `<div class="item" id="slide${i}">
@@ -20,7 +21,7 @@ for (let i = 0; i < images.length; i++){
   </div>`
 }
 
-// IMMAGINI ATTIVE
+// VARIABILI IMMAGINI VISUALIZZATE
 let imgVisualizzata = document.getElementById("slide" + index);
 imgVisualizzata.classList.add("active");
 
@@ -39,9 +40,11 @@ up.addEventListener("click",
     index = 0;
   }
 
-  // VISUALIZZA FOTO NELL ITEM
+  // DISPLAY NONE ALL'ITEM
   imgVisualizzata.classList.remove("active");
+  // AVANZA DI 1
   imgVisualizzata = document.getElementById("slide" + index);
+  // DAI DISPLAY BLOCK
   imgVisualizzata.classList.add("active");  
   }
 );
@@ -57,9 +60,11 @@ function (){
     index = images.length - 1;
   }
 
-  // VISUALIZZA FOTO NELL ITEM
+  // DISPLAY NONE ALL' ITEM
   imgVisualizzata.classList.remove("active");
+  // AVANZA DI 1
   imgVisualizzata = document.getElementById("slide" + index);
+  // DAI DISPLAY BLOCK
   imgVisualizzata.classList.add("active");
   }
 );
